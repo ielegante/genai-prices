@@ -11,7 +11,7 @@ repos:
         exclude: '^\.github/workflows/.*\.lock\.yml$'
 
   - repo: https://github.com/sirosen/texthooks
-    rev: 0.7.1
+    rev: 1.0.0
     hooks:
       - id: fix-smartquotes
       - id: fix-spaces
@@ -19,14 +19,14 @@ repos:
 
   - repo: https://github.com/codespell-project/codespell
     # Configuration for codespell is in pyproject.toml
-    rev: v2.4.2
+    rev: v2.4.3
     hooks:
       - id: codespell
         additional_dependencies:
           - tomli
 
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: v1.24.1
+    rev: v1.32.0
     hooks:
       - id: zizmor
         # gh-aw compiles the agentic-workflow *.md sources into these generated
